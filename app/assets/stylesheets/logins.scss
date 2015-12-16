@@ -1,0 +1,76 @@
+// Place all the styles related to the Logins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#container1 {
+  background-color: #e2dada;
+}
+
+.centered-form {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.centered-form .panel {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+#login-panel-title{
+  margin-top: 20px;
+  color: #fff;
+}
+
+#login-panel-title a{
+  margin-top: 20px;
+  color: #fff;
+}
+#login-panel-title a:hover{
+  background-color: #86b817;
+}
+#login-panel-heading{
+  height: 60px;
+  background-color: #86b817;
+  background-image: url(http://dan.rog.chudu24.com:81/img/logo_white.png);
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  background-position-x: 80%;
+}
+
+//for user-detail
+body {
+  font-family: "Segoe UI", 'sans-serif';
+}
+
+.avg {
+  font-size:77px;
+  padding-top: 20px;
+  color:#5CB85C;
+}
+
+.details {
+  min-height: 355px;
+  display: inline-block;
+}
+
+.rating {
+  padding-left:40px;
+}
+
+.skillLine {
+  display:inline-block;
+  width:100%;
+  padding: 3px 4px;
+}
+
+.skills {
+  text-decoration:underline;
+}
+
+div.skill {
+  background: #F58723;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  padding: 3px 4px;
+  width:70px;
+}

@@ -1,0 +1,24 @@
+-#%p
+-#  =@result
+.container.colored
+  .col-md-4
+  .col-md-4{'style'=> 'margin-top: 30px;'}
+    .login-panel.panel.panel-default
+      .panel-heading#login-panel-heading
+        %h1.panel-title#login-panel-title
+          %a{:href => '/login'}
+            Sign In
+      .panel-body
+        %form{:method => "POST"}
+          %fieldset
+            .form-group
+              %input.form-control{'name'=> 'email', 'type'=> 'email', 'placeholder'=> 'Email', 'required'=> 'required' , :oninvalid =>"this.setCustomValidity('Vui lòng nhập email')", :oninput => "setCustomValidity('')" }
+            .form-group
+              %input.form-control{'name'=> 'password', 'type'=> 'password', 'placeholder'=> 'password', 'required'=> 'required', :oninvalid =>"this.setCustomValidity('Vui lòng nhập password')", :oninput => "setCustomValidity('')" }
+            .checkbox
+              %label
+                %input{'type'=> 'checkbox', 'name'=> 'remember'}
+                  Remember me
+            %button.btn.btn-sm.btn-success{'type'=> 'submit'}
+              Sing in
+  .col-md-4

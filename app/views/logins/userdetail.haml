@@ -1,0 +1,54 @@
+%link{:rel => 'stylesheet', :type => 'text/css', :href=> 'http://www.shieldui.com/shared/components/latest/css/light/all.min.css'}
+%script{:type => 'text/javascript', :src => 'http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js'}
+
+.container
+  .row{:style => 'margin-top: 30px;'}
+    .col-md-offset-2.col-md-8.col-lg-offset-3.col-lg-6
+      .well.details
+        .col-sm-12
+          .col-xs-12.col-sm-8
+            %h2{:style => 'text-decoration:underline;'}
+              = session[:email]
+            %p
+              %strong
+                Position:
+              Senior Developer
+            %p
+              %strong
+                Current Company:
+              Chudu24
+            %p
+              %strong
+                Department:
+              Tech
+            %p.skills
+              %strong
+                Skills
+            .skillLine
+              .skill.pull-left
+                HTML5
+              .rating#rate1
+            .skillLine
+              .skill.pull-left
+                C#
+              .rating#rate2
+            .skillLine
+              .skill.pull-left
+                jQuery
+              .rating#rate3
+            .skillLine
+              .skill.pull-left
+                SQL
+              .rating#rate4
+            .skillLine
+              .skill.pull-left
+                CSS
+              .rating#rate5
+
+          .col-xs-12.col-sm-4.col-lg-1.text-center
+            %figure
+              %span.fa.fa-file-text-o{:style => 'font-size:127px; padding-top: 20px;'}
+              %span.row{:style => 'font-size:47px; padding-top: 20px;'}
+                Avg.
+              %span.avg.row
+                6.2

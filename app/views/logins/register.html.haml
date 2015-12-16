@@ -1,0 +1,23 @@
+.container
+  .row.centered-form
+    .col-xs-12.col-sm-8.col-md-4.col-sm-offset-2.col-md-offset-4.panel.panel-default
+      .panel-heading.row#login-panel-heading
+        %h3.panel-title#login-panel-title
+          %a{:href => '/register'}
+            Register member
+      .panel-body
+        %form{:role => "form", :lpformnum => "1"}
+          .form-group
+            %input.form-control.input-sm{'name'=> 'first_name', 'type'=> 'text', 'placeholder'=> 'First Name', 'required'=> 'required' }
+          .form-group
+            %input.form-control.input-sm{'name'=> 'last_name', 'type'=> 'text', 'placeholder'=> 'Last Name', 'required'=> 'required' }
+          .form-group
+            %input.form-control.input-sm{'name'=> 'email', 'type'=> 'email', 'placeholder'=> 'Email Address', 'required'=> 'required' }
+          .row
+            .col-xs-6.col-sm-6.col-md-6
+              .form-group
+                %input.form-control.input-sm{'name'=> 'password', 'type'=> 'password', 'placeholder'=> 'password', 'required'=> 'required' }
+            .col-xs-6.col-sm-6.col-md-6
+              .form-group
+                %input.form-control.input-sm{'name'=> 'password_confirmation', 'type'=> 'password', 'placeholder'=> 'Confirm Password', 'required'=> 'required' }
+          %input.btn.btn-info.btn-block{'type'=> 'submit', :value => "Register"}
